@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Ref from './Ref'
 
 const Home = () => {
     return (
-        <div>home</div>
+        <Fragment>
+            <div>home</div>
+            <Ref />
+        </Fragment>
     )
 }
 export default Home
