@@ -1,0 +1,4 @@
+# node_modules/ is ignored
+
+# testing cypress
+src/*.test.js

@@ -4,15 +4,15 @@ import Home from './pages/Home'
 import GraphQL from './pages/GraphQL'
 
 
-const route = () => {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/graphql" component={GraphQL} />
-      </Switch>
-    </Router>
-  )
+const route: () => JSX.Element = () => {
+    return (
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/graphql" component={GraphQL} />
+            </Switch>
+        </Router>
+    )
 }
 
 export default route
