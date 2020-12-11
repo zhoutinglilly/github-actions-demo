@@ -26,7 +26,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src --fix --ext .ts,.tsx"
+    "lint": "eslint src/**/* --fix --ext .ts,.tsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add ."
+    ]
   },
   "browserslist": {
     "production": [
@@ -41,6 +53,11 @@
     ]
   },
   "devDependencies": {
-    "@tsconfig/node12": "^1.0.7"
+    "@tsconfig/node12": "^1.0.7",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^4.3.5",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
   }
 }

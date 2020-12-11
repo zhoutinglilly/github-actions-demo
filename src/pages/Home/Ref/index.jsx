@@ -1,12 +1,14 @@
-import React, { Fragment } from 'react'
+/** @format */
+
+import React, {Fragment} from 'react'
 import Hello from './Hello'
 class RefDemo extends React.Component {
-    handleClick = () =>{
+    handleClick = () => {
         if (this.child) {
             this.child.setVisible(true)
         }
     }
-    onRef = (ref) => {
+    onRef = ref => {
         // 将子组件暴露出来的对象挂载到 child
         this.child = ref
     }

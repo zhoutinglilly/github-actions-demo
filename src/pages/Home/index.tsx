@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
-import Ref from './Ref'
+import React, { Fragment } from 'react';
+import Ref from './Ref';
 
-const Home = (): JSX.Element => {
+const Home = () => {
     return (
         <Fragment>
             <div>home</div>
