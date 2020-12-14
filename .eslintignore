@@ -9,3 +9,6 @@ dist
 build
 public
 .eslintrc.js
+
+# css
+*.css
