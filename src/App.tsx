@@ -1,18 +1,12 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Home from './pages/Home'
-import GraphQL from './pages/GraphQL'
+/** @format */
 
+import React from 'react'
+// import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Home from './pages/Home'
+// import GraphQL from './pages/GraphQL'
 
 const route: () => JSX.Element = () => {
-    return (
-        <Router>
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/graphql" component={GraphQL} />
-            </Switch>
-        </Router>
-    )
+    return <Home />
 }
 
 export default route
