@@ -1,12 +1,10 @@
 /** @format */
 
 module.exports = {
-    parser: '@typescript-eslint/parser',
+    parser: 'babel-eslint',
     plugins: ['@typescript-eslint', 'prettier'],
     extends: [
         'react-app',
-        'plugin:@typescript-eslint/recommended',
-        'prettier/@typescript-eslint',
         'plugin:prettier/recommended',
         'react-app/jest',
     ],
@@ -24,7 +22,14 @@ module.exports = {
     },
     rules: {
         'prettier/prettier': 'off',
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-console': 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     },
+    overrides: [
+        {
+            files: ['*.ts', '*.tsx'],
+            parser: '@typescript-eslint/parser',
+            extends: ['plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint'],
+        }
+    ]
 }
