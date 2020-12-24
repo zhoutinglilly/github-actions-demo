@@ -8,7 +8,7 @@ const Login = (): JSX.Element => {
     const location = useLocation<{from: {pathname: string}}>()
     const auth: ContextType = useAuth()
 
-    const from = location.state.from || {pathname: '/'}
+    const from = location.state?.from || {pathname: '/'}
     const handleLoginClick = () => {
         auth.signIn(() => {
             history.replace(from)

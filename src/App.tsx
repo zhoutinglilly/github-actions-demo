@@ -8,7 +8,7 @@ import Routes from './routes'
 const App = (): JSX.Element => {
     return (
         <AuthProvider>
-            <Router basename="/github-actions-demo">
+            <Router basename={process.env.PUBLIC_URL}>
                 <Routes />
             </Router>
         </AuthProvider>
