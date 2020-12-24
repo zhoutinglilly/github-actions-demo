@@ -1,12 +1,18 @@
 /** @format */
 
 import React from 'react'
-// import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Home from './pages/Home'
-// import GraphQL from './pages/GraphQL'
+import {BrowserRouter as Router} from 'react-router-dom'
+import {AuthProvider} from './routes/AuthProvider'
+import Routes from './routes'
 
-const route: () => JSX.Element = () => {
-    return <Home />
+const App = (): JSX.Element => {
+    return (
+        <AuthProvider>
+            <Router basename="/github-actions-demo">
+                <Routes />
+            </Router>
+        </AuthProvider>
+    )
 }
 
-export default route
+export default App
