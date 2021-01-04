@@ -11,7 +11,8 @@ const Home = (): JSX.Element => {
             <div>home</div>
             <Ref />
             <button onClick={() => history.push('/about')}>About</button>
-            <button onClick={() => history.push('/about')}>Login</button>
+            <button onClick={() => history.push('/login')}>Login</button>
+            <button onClick={() => history.push('/gallery')}>Gallery</button>
         </Fragment>
     )
 }

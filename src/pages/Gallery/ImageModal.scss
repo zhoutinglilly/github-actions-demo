@@ -1,0 +1,16 @@
+.imageModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.15);
+    .imageModal-content {
+        position: absolute;
+        background: #ffffff;
+        top: 25;
+        left: 10%;
+        padding: 15;
+        border: 1ps solid #444444;
+    }
+}

@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import GraphQL from '../pages/GraphQL'
 import About from '../pages/About'
 import Login from '../pages/Login'
+import Gallery from '../pages/Gallery'
 import PrivateRoute from './PrivateRoute'
 
 const Routes = (): JSX.Element => {
@@ -14,6 +15,7 @@ const Routes = (): JSX.Element => {
             <Route exact path="/" component={Home} />
             <Route path="/graphql" component={GraphQL} />
             <Route path="/login" component={Login} />
+            <Route path="/gallery" component={Gallery} />
             <PrivateRoute path="/about" component={About} />
         </Switch>
     )

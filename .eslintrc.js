@@ -30,6 +30,9 @@ module.exports = {
             files: ['*.ts', '*.tsx'],
             parser: '@typescript-eslint/parser',
             extends: ['plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint'],
+            rules: {
+                '@typescript-eslint/no-explicit-any': "off",
+            }
         }
     ]
 }
