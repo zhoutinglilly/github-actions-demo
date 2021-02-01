@@ -1,0 +1,9 @@
+#plot_container {
+    position: relative;
+    width: 700px;
+    .plot_legend {
+        position: absolute;
+        top: 30px;
+        right: 5px;
+    }
+}

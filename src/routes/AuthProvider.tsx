@@ -2,7 +2,9 @@
 
 import React, {createContext, useContext, useState} from 'react'
 
+/**This is description for use */
 interface FakeAuthType {
+    /** This is if auth */
     isAuthenticated: boolean
     signIn: (cb: () => void) => void
     signOut: (cb: () => void) => void
