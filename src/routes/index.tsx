@@ -8,6 +8,7 @@ import About from '../pages/About'
 import Login from '../pages/Login'
 import Gallery from '../pages/Gallery'
 import Plot from '../pages/Plot/index'
+import D3 from '../pages/D3Plot'
 import PrivateRoute from './PrivateRoute'
 
 const Routes = (): JSX.Element => {
@@ -18,6 +19,7 @@ const Routes = (): JSX.Element => {
             <Route path="/login" component={Login} />
             <Route path="/gallery" component={Gallery} />
             <Route path="/plotly" component={Plot} />
+            <Route path="/d3" component={D3} />
             <PrivateRoute path="/about" component={About} />
         </Switch>
     )

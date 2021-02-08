@@ -8,7 +8,7 @@ const Home = (): JSX.Element => {
     const history = useHistory()
     return (
         <Fragment>
-            <div>home</div>
+            <div>Home-header</div>
             <Ref />
             <button onClick={() => history.push('/about')}>About</button>
             <button onClick={() => history.push('/login')}>Login</button>
