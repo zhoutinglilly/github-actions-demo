@@ -1,9 +1,10 @@
 /** @format */
 
-import React, {useRef} from 'react'
+import React, {useMemo, useRef} from 'react'
 import Plot from 'react-plotly.js'
 import Plotly from 'plotly.js'
 import html2canvas from 'html2canvas'
+import Legends from '../../components/Legends'
 import './index.scss'
 
 type CommonDataType = {
@@ -37,7 +38,7 @@ export default (): JSX.Element => {
         // hovermode: "closest",
         margin: {
             l: 40,
-            r: 100,
+            r: 250,
             b: 80,
             t: 40,
         },
@@ -112,6 +113,26 @@ export default (): JSX.Element => {
     //     }
     // })
 
+    const legendData = [
+        {
+            id: 0,
+            index: 0,
+            text: 'gdgd',
+            color: 'rgb(31, 119, 180)',
+        },
+        {
+            id: 1,
+            index: 1,
+            text: 'gdgd2',
+            color: 'rgb(255, 127, 14)',
+        },
+        {
+            id: 2,
+            index: 2,
+            text: 'cervix',
+            color: 'rgb(44, 160, 44)',
+        },
+    ]
     return (
         <div id="plot_container" ref={ref}>
             <Plot
@@ -140,10 +161,11 @@ export default (): JSX.Element => {
                     ],
                 }}
             />
-            <div className="plot_legend">
+            <Legends data={legendData} style={{width: '150px'}} />
+            {/* <div className="plot_legend">
                 <p>one</p>
                 <p>two</p>
-            </div>
+            </div> */}
         </div>
     )
 }
