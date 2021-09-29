@@ -13,7 +13,7 @@ jobs:
         persist-credentials: false
     - name: Install and Build
       run: | #if use npm:npm install & npm run build
-        yarn
+        yarn install --production
         yarn build
        # cp build/index.html build/404.html
 

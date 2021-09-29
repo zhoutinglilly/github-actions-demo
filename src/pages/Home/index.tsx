@@ -8,11 +8,14 @@ const Home = (): JSX.Element => {
     const history = useHistory()
     return (
         <Fragment>
-            <div>home</div>
+            <div>Home-header</div>
             <Ref />
             <button onClick={() => history.push('/about')}>About</button>
             <button onClick={() => history.push('/login')}>Login</button>
             <button onClick={() => history.push('/gallery')}>Gallery</button>
+            <button onClick={() => history.push('/plotly')}>Plotly</button>
+            <button onClick={() => history.push('/icn3d')}>Icn3d</button>
+            <button onClick={() => history.push('/intersection')}>Intersection</button>
         </Fragment>
     )
 }

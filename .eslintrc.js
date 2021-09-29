@@ -24,6 +24,7 @@ module.exports = {
         'prettier/prettier': 'off',
         'no-console': 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        "import/no-anonymous-default-export":'off'
     },
     overrides: [
         {

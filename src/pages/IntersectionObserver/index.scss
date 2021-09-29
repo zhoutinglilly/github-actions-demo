@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    .left {
+        width: 250px;
+    }
+    .right {
+        flex: 1;
+    }
+}

@@ -1,0 +1,51 @@
+.expanded-plot-legend {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    .plot-legend-group {
+        display: flex;
+    }
+    .plot-legend-group-item {
+        padding-right: 10px;
+    }
+    .plot-legend {
+        margin-right: 15px;
+        margin-bottom: 4px;
+        width: 100%;
+        .legend-text {
+            cursor: pointer;
+            font-size: 13px;
+            color: #000;
+            display: flex;
+            justify-content: space-between;
+           .legend-text-container {
+                display: flex;
+                align-items: center;
+                width: 76%;
+                .legend-word {
+                    display: inline-block;
+                    // width: 30px;
+                    flex: 1;
+                    line-height: 20px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .legend-edit {
+                display: inline-block;
+                margin-left: 8px;
+                border: 1px solid #888888;
+                border-radius: 5px;
+                padding: 2px 3px;
+                cursor: pointer;
+                font-size: 10px;
+                color: #000;
+            }
+        }
+        .legend-text-extra {
+            cursor: pointer;
+            word-break: break-all;
+            line-height: 1;
+        }
+    }
+}
