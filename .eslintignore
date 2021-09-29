@@ -4,6 +4,7 @@ node_modules
 # testing cypress
 cypress
 src/*.test.js
+
 # others
 dist
 build
@@ -12,3 +13,6 @@ public
 
 # css
 *.css
+
+# thirdpart
+/src/components/icn3d
