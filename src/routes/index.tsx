@@ -11,6 +11,7 @@ import Plot from '../pages/Plot/testLegend'
 import D3 from '../pages/D3Plot'
 import Icn3d from '../pages/Icn3d'
 import PrivateRoute from './PrivateRoute'
+import Intersection from '../pages/IntersectionObserver'
 
 const Routes = (): JSX.Element => {
     return (
@@ -22,6 +23,7 @@ const Routes = (): JSX.Element => {
             <Route path="/plotly" component={Plot} />
             <Route path="/d3" component={D3} />
             <Route path="/icn3d" component={Icn3d} />
+            <Route path="/intersection" component={Intersection} />
             <PrivateRoute path="/about" component={About} />
         </Switch>
     )
